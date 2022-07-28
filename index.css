@@ -1,0 +1,289 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1 {
+    font-size: 3.5em;
+}
+
+h2 {
+    font-size: 2.7em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+p {
+    font-size: 1.25em;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    font-size: 1.25em;
+}
+
+body {
+    background-color: white;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+    font-size: 1.5em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 2px solid rgba(0, 0, 0, 5);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 5);
+    color: white;
+    background-color: rgb(8, 169, 8);
+}
+
+button:hover {
+    background-color: rgb(6, 75, 6);
+}
+
+
+.color-acento {
+    color: green;
+    font-size: 40px;
+}
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+}
+
+header {
+    background-color: rgb(245, 245, 245);
+}
+
+header .logo {
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: green;
+    font-size: 1.6em;
+}
+
+header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a {
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover {
+    color: green
+}
+
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("https://depor.com/resizer/DAgbvEoqFAj-O5jAwFAa6xjLLGs=/580x330/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/4VTBEVWVFVBIVLMNBJHEADJ23U.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#hero h1 {
+    color: white;
+}
+
+
+
+
+#misproyectos {
+    background-color: rgb(50, 50, 50);
+    color: white;
+    text-align: center;
+
+}
+
+#misproyectos .container {
+    padding: 200px 0px;
+}
+
+#misproyectos h2 {
+    margin-top: 0;
+    font-size: 3.2em;
+}
+
+#misproyectos p {
+    display: none;
+}
+
+#misproyectos .carta {
+    background-size: cover;
+    background-position: center, center;
+    padding: 50px;
+    margin: 12px;
+    border-radius: 15px;
+}
+
+.carta:first-child {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLOm6A2FdeaUt0QIrPDN2gzRorIKD1sD7zt5_wpy4ZgtTEuuzb-lXuPPEidXVXA9xUKm0&usqp=CAU");
+
+}
+
+.carta:nth-child(2) {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("https://i.ytimg.com/vi/SojJ6oTDltM/mqdefault.jpg");
+}
+
+.carta:nth-child(3) {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("https://www.metroecuador.com.ec/resizer/NzykhGCUdBPXDBQWvwXyuj8mwRA=/1440x1080/filters:format(png):quality(70)/cloudfront-us-east-1.images.arcpublishing.com/metroworldnews/KG3OX7EFNJEPNGU25O3625MUW4.png");
+}
+
+#contactos .container {
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#contactos a {
+    margin: 12px 6px;
+    display: block;
+    font-weight: bold;
+}
+
+#queEsperas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 80vh;
+    background-color: rgb(30, 30, 30);
+    color: white
+}
+
+footer {
+    background-color: rgba(230, 230, 230, 230);
+}
+
+footer p {
+    margin: 0;
+    padding: 12px;
+    color: rgb(100, 100, 100);
+
+}
+
+footer .container {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+@media (min-width: 720px) {
+
+    header {
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav {
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #Antecedentes .container {
+        display: flex;
+        justify-content: center;
+        padding: 50px 0px;
+    }
+
+    #Antecedentes .texto {
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding: 0px 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center0;
+
+
+    }
+
+    #Antecedentes .img-container {
+        background-image: url("https://scontent.fgye14-1.fna.fbcdn.net/v/t31.18172-8/23632403_711202745757529_5386128905924538287_o.jpg?_nc_cat=108&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeGMgeOBJV787TpiaF1AX7CkTxZP7gg7yAxPFk_uCDvIDDr99w0suALwC7xJWKLnW9XGHE4qHQrVcvEWNWTzM8wt&_nc_ohc=UjNtVPhKkpEAX9rP1Xg&_nc_ht=scontent.fgye14-1.fna&oh=00_AT-hYsMFPJVQildn-0yHxjGlcIVbBxbvGT7nNaF3excveA&oe=6306A807");
+        background-size: cover;
+        background-position: center;
+        height: 500px;
+        width: 50%;
+
+    }
+
+    #Antecedentes .texto {
+        width: 50%;
+        text-align: center;
+        padding: 0px 30px;
+        padding-left: 50px;
+    }
+
+    #misproyectos .cartas{
+        display: flex;
+        justify-content: center;
+    }
+
+    #misproyectos p{
+        display: block;
+    }
+
+    #misproyectos .carta{
+        padding: 50px;
+    }
+
+    #contactos{
+        background-image: url("https://conceptodefinicion.de/wp-content/uploads/2014/03/codigo-.jpg");
+        background-repeat: no-repeat;
+        background-size: 500px 400px;
+        background-position: calc(100vw - 700px) 120px;
+    }
+    #contactos .container{
+        text-align: initial;
+    }
+
+    #contactos a{
+    margin-left: 100px;
+    color: black;
+    }
+}
